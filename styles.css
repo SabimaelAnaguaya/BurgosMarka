@@ -1,9 +1,24 @@
+:root{
+    --blue: rgb(217, 215, 241);
+    --white: rgb(255, 253, 222);
+    --peach: rgb(255, 203, 203);
+    --green: rgb(231, 251, 190);
+}
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 /*
 ======================================
 HEADER / header contacts
@@ -12,7 +27,7 @@ HEADER / header contacts
 .headerContacts{
     width: 100%;
     height: 8vh;
-    background: whitesmoke;
+    background: var(--white);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -45,14 +60,17 @@ HEADER / header navBar
 .mainHeader__navBar{
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    background: rgb(254, 249, 239);
+    background: linear-gradient(180deg, rgba(254, 249, 239,1) 0%, rgba(254, 249, 239,0.5) 100%);
 }
 .logo{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     color: black;
     font-weight: bolder;
@@ -60,4 +78,148 @@ HEADER / header navBar
 
 .headerLogo{
     width: 80px;
+}
+
+.listItems{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.listLink{
+    width: 120px;
+    
+    padding: 5px 8px;
+}
+
+.wh:hover{
+    border-radius: 8px;
+    background: rgb(243, 185, 99);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+.bl:hover{
+    border-radius: 8px;
+    background: var(--blue);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+.pe:hover{
+    border-radius: 8px;
+    background: var(--peach);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+.ye:hover{
+    border-radius: 8px;
+    background: var(--green);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+/*
+======================================
+HEADER / header cards
+======================================
+*/
+
+
+.headerCards{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 0 20px;
+    overflow: hidden;
+    
+}
+
+.card{
+    position: absolute;
+    width: 90%;
+    height: 400px;
+    border-radius: 10%;
+    margin-right: 50px;
+    background-color: rgb(254, 249, 239, .5);
+    text-align: center;
+}
+
+.card:hover{
+    
+    border-radius: 10%;
+    box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.75);
+    transition: .5s all ease-in-out;
+}
+
+.cardBlue:hover{
+    background-color: var(--blue);
+}
+
+.cardYellow:hover{
+    background-color: var(--green);
+}
+
+.cardPeach:hover{
+    background-color: var(--peach);
+}
+
+
+/*
+    ANIMATIONS
+*/
+
+.headerCards .slide-in {
+    -webkit-transform: translate3d(-90%, 0px, 0px);
+    -moz-transform: translate3d(-90%, 0px, 0px);
+    -ms-transform: translate3d(-90%, 0px, 0px);
+    -o-transform: translate(-90%, 0px, 0px);
+    transform: translate3d(-90%, 0px, 0px);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    z-index: 1;
+}
+
+.headerCards .slide-in:target ~ .slide-in {
+    -webkit-transform: translate3d(90%, 0px, 0px);
+    -moz-transform: translate3d(90%, 0px, 0px);
+    -ms-transform: translate3d(90%, 0px, 0px);
+    -o-transform: translate(90%, 0px, 0px);
+    transform: translate3d(90%, 0px, 0px);
+}
+
+.headerCards .slide-in:target {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 3;
+}
+
+.headerCards .slide-in:target + .slide-in {
+    z-index: 2;
+}
+
+.headerCards .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+..headerCards .controls .btn {
+    color: #333;
+    font-size: 3em;
+    text-decoration: none;
 }
