@@ -40,22 +40,59 @@
                     </ul>
                 </nav>
             </div>
-            <section class="headerCards">
-                <div class="card cardBlue slide-in" id="item1">
-                    
-                </div>
-                <div class="card cardYellow slide-in" id="item2">
-                    
-                </div>
-                <div class="card cardPeach slide-in" id="item3">
-                    
-                </div>
-                <div class="controls">
-                    <a href="#item1" class="btn">•</a>
-                    <a href="#item2" class="btn">•</a>
-                    <a href="#item3" class="btn">•</a>
-                </div>
-            </section>
+
+            <div class="bod">
+                <section class="headerCards containerAll">
+                
+                    <input type="radio" id="uno" name="imageSlide" hidden>
+                    <input type="radio" id="dos" name="imageSlide" hidden>
+                    <input type="radio" id="tres" name="imageSlide" hidden>
+                    <input type="radio" id="cuatro" name="imageSlide" hidden>
+    
+                   <div class="slide">
+    
+                        <div class="itemSlide">
+                            <img  class="pagImg" src="./img/cardImg01.jpg" alt="">
+                            <div class="infoSlide">
+                                <div class="pagInfo">
+                                    <h2>Vuelve a Clases</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eius atque vero commodi voluptate, ad dicta obcaecati alias enim officiis!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemSlide">
+                            <img class="pagImg" src="./img/cardImg02.jpg" alt="">
+                        </div>
+                        <div class="itemSlide">
+                            <img class="pagImg" src="./img/cardImg03.jpg" alt="">
+                        </div>
+                        <div class="itemSlide">
+                            <img class="pagImg" src="./img/cardImg04.jpg" alt="">
+                        </div>
+                        
+                   </div>
+                   
+                   <div class="pagination">
+    
+                        <label for="uno" class="paginationItem">
+                            <img class="pagImg" src="./img/cardImg01.jpg" alt="">
+                        </label>
+    
+                        <label for="dos" class="paginationItem">
+                            <img class="pagImg" src="./img/cardImg02.jpg" alt="">
+                        </label>
+    
+                        <label for="tres" class="paginationItem">
+                            <img class="pagImg" src="./img/cardImg03.jpg" alt="imagen musica">
+                        </label>
+    
+                        <label for="cuatro" class="paginationItem">
+                            <img class="pagImg" src="./img/cardImg04.jpg" alt="imagen musica">
+                        </label>
+                   </div>
+                </section>
+            </div>
+            
         </section>
 
        
