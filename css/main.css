@@ -74,8 +74,8 @@ HEADER / header navBar
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(254, 249, 239);
-    background: linear-gradient(180deg, rgba(254, 249, 239,1) 0%, rgba(254, 249, 239,0.5) 100%);
+    background: rgb(255, 253, 222);
+    background: linear-gradient(180deg, rgba(255, 253, 222,1) 0%, rgba(254, 249, 239,0.5) 100%);
     font-size: 1.6rem;
 }
 .logo{
