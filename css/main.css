@@ -72,17 +72,21 @@ HEADER / header navBar
     height: fit-content;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background: rgb(255, 253, 222);
     background: linear-gradient(180deg, rgba(255, 253, 222,1) 0%, rgba(254, 249, 239,0.5) 100%);
     font-size: 1.6rem;
 }
+
 .logo__container{
-    width: 100%;
+    width: fit-content;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     font-size: 1.6rem;
     font-weight: bold;
 }
@@ -102,51 +106,60 @@ HEADER / header navBar
 }
 
 .listItems{
-    width: 100px;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    position: relative;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 130px 130px;
     text-align: center;
+    gap: 10px;
 }
 
-.listLink{
-    width: 100%;
-    
+
+/* menu mobile */
+.wh{
+    background:rgb(243, 185, 99) ;
+    justify-self: end ;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s all ease;
+}
+
+.bl{
+    font-size: 0;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: .5s all ease-in-out;
+}
+
+
+.pe{
+    background:var(--peach) ;
+    border-radius: 50%;
+    justify-self: end;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s all ease;
+}
+
+.ye{
+    background: var(--green) ;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s all ease;
+}
+
+.listLink:hover{
+    font-size: 1.6rem;
+    border-radius: 10px;
+    width: 120px;
     padding: 5px 8px;
-}
-
-.wh:hover{
-    border-radius: 8px;
-    background: rgb(243, 185, 99);
-    color: black;
-    font-weight: bold;
     transition: 0.5s all ease;
 }
-
-.bl:hover{
-    border-radius: 8px;
-    background: var(--blue);
-    color: black;
-    font-weight: bold;
-    transition: 0.5s all ease;
-}
-
-.pe:hover{
-    border-radius: 8px;
-    background: var(--peach);
-    color: black;
-    font-weight: bold;
-    transition: 0.5s all ease;
-}
-
-.ye:hover{
-    border-radius: 8px;
-    background: var(--green);
-    color: black;
-    font-weight: bold;
-    transition: 0.5s all ease;
-}
-
 /*
 ======================================
 HEADER / header cards
