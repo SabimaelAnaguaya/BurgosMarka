@@ -106,59 +106,42 @@ HEADER / header navBar
 }
 
 .listItems{
-    position: relative;
     width: fit-content;
     display: grid;
     grid-template-columns: 130px 130px;
     text-align: center;
     gap: 10px;
 }
-
+ .listLink{
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 130px;
+    padding: 5px 8px;
+ }
 
 /* menu mobile */
 .wh{
     background:rgb(243, 185, 99) ;
-    justify-self: end ;
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    transition: 0.5s all ease;
 }
 
 .bl{
-    font-size: 0;
-    background-color: var(--blue);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    transition: .5s all ease-in-out;
-}
 
+    background-color: var(--blue);
+}
 
 .pe{
     background:var(--peach) ;
-    border-radius: 50%;
-    justify-self: end;
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    transition: 0.5s all ease;
+    
 }
 
 .ye{
     background: var(--green) ;
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    transition: 0.5s all ease;
 }
 
 .listLink:hover{
-    font-size: 1.6rem;
-    border-radius: 10px;
-    width: 120px;
-    padding: 5px 8px;
     transition: 0.5s all ease;
+    box-shadow: 0px 5px 5px 2px gray;
 }
 /*
 ======================================
