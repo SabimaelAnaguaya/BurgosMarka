@@ -78,20 +78,31 @@ HEADER / header navBar
     background: linear-gradient(180deg, rgba(255, 253, 222,1) 0%, rgba(254, 249, 239,0.5) 100%);
     font-size: 1.6rem;
 }
-.logo{
+.logo__container{
+    width: 100%;
     display: flex;
+    text-align: center;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-weight: bolder;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
-.headerLogo{
-    width: 80px;
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 100px;
+}
+
+.txtLogo{
+    width: 200px;
 }
 
 .listItems{
+    width: 100px;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -99,7 +110,7 @@ HEADER / header navBar
 }
 
 .listLink{
-    width: 120px;
+    width: 100%;
     
     padding: 5px 8px;
 }
