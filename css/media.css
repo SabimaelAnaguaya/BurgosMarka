@@ -18,4 +18,37 @@
     .imgMensaje{
         width: 100px;
     }
+
+    /*
+    SECCION GALERIA
+*/
+.galeria{
+    background-color:var(--peach);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+/*
+    ACTIVIDADES
+*/
+
+.imagenesGaleria{
+    max-width: 320px;
+}
+
+.imgGal{
+    width: 100%;
+}
+
+.imgGal:hover{
+    transform: scale(1.5) translate(-40px);
+    transition: .75s all ease-in-out;
+}
+
 }

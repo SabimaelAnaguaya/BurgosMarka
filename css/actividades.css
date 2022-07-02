@@ -1,0 +1,119 @@
+.main__actividades{
+    flex-wrap: wrap;
+    justify-content:center ;
+    padding-bottom: 20px;
+}
+.subtitle{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+/*
+    SECCION GALERIA
+*/
+.imagenesContainer{
+    width: 90%;
+}
+
+.galeria{
+    background-color:var(--peach);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.imagenesGaleria{
+    width: 50%;
+}
+
+.imgGal{
+    width: 100%;
+}
+
+.imgGal:hover{
+    transform: scale(1.5);
+    transition: .75s all ease-in-out;
+}
+
+/*
+    SECCION ACTIVIDADES
+*/
+.cards__actividades{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.actividadCard{
+    max-width: 425px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--blue);
+    font-size: 1.6rem;
+    text-align: justify;
+    border-radius: 20px;
+}
+.imgActividad{
+    max-width: 350px;
+}
+
+.imgActividad img{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 3px 10px 3px gray;
+}
+.infoActividad h3{
+    text-align: center;
+}
+
+.infoActividad p{
+    padding:  0 20px;
+}
+
+
+
+/*
+    TALLERES
+*/
+
+.main__talleres{
+    width: 90%;
+    
+}
+
+.cardTaller{
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    background: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.imgTalleresContainer{
+    max-width: 150px;
+    max-height: 150px;
+    clip-path: inset(0 20% 0 0);
+}
+
+.imgTalleres{
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 20% 0 0);
+    object-fit: contain;
+}
+
+.infoTalleres{
+    width: 300px;
+    height: 90%;
+    font-size: 1.6rem;
+}
