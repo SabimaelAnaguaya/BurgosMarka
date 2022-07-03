@@ -50,7 +50,7 @@
     gap: 10px;
 }
 .actividadCard{
-    max-width: 425px;
+    max-width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -86,11 +86,14 @@
 
 .main__talleres{
     width: 90%;
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .cardTaller{
-    width: 100%;
+    width: 32%;
     height: fit-content;
     border-radius: 20px;
     background: var(--green);
