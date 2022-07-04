@@ -38,17 +38,5 @@
     ACTIVIDADES
 */
 
-.imagenesGaleria{
-    max-width: 320px;
-}
-
-.imgGal{
-    width: 100%;
-}
-
-.imgGal:hover{
-    transform: scale(1.5) translate(-40px);
-    transition: .75s all ease-in-out;
-}
 
 }

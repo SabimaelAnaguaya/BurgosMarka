@@ -12,7 +12,7 @@
     SECCION GALERIA
 */
 .imagenesContainer{
-    width: 90%;
+    width: 100%;
 }
 
 .galeria{
@@ -20,24 +20,20 @@
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     padding: 10px;
     border-radius: 20px;
 }
 .imagenesGaleria{
-    width: 50%;
+    width: 150px;
 }
 
 .imgGal{
     width: 100%;
 }
 
-.imgGal:hover{
-    transform: scale(1.5);
-    transition: .75s all ease-in-out;
-}
 
 /*
     SECCION ACTIVIDADES
@@ -47,37 +43,64 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 .actividadCard{
-    max-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    background-color: var(--blue);
-    font-size: 1.6rem;
-    text-align: justify;
-    border-radius: 20px;
+    position: relative;
+    width: 360px;
+    height: 400px;
+    background: #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .imgActividad{
-    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 10px 1px gray;
 }
 
 .imgActividad img{
-    border-radius: 20px;
-    width: 100%;
-    box-shadow: 0px 3px 10px 3px gray;
+    position: relative;
+    right: 150px;
+    height: 100%;
+    transition: .5s;
 }
-.infoActividad h3{
+
+.actividadCard:hover .imgActividad img{
+    opacity: .5;
+    transform: translateX(40%);
+}
+
+.infoBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: var(--blue);
+    transition: .5s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.actividadCard:hover .infoBg{
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.infoActividad{
+    padding: 20px;
     text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
 }
-
-.infoActividad p{
-    padding:  0 20px;
-}
-
 
 
 /*
