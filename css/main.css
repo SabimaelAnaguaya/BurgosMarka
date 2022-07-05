@@ -5,15 +5,21 @@
     --green: rgb(231, 251, 190);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+}
 
 html{
     font-size: 62.5%;
+    
 }
 
 a{
@@ -118,11 +124,13 @@ HEADER / header navBar
     border-radius: 10px;
     width: 130px;
     padding: 5px 8px;
+    
  }
 
 /* menu mobile */
 .wh{
     background:rgb(243, 185, 99) ;
+    
 }
 
 .bl{
