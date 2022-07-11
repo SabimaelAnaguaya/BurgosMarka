@@ -52,7 +52,8 @@
 }
 
 .bigBox img{
-    width: 100%;
+    height: 80%;
+    margin: auto;
 }
 
 .bigBox span{
@@ -136,41 +137,75 @@
 /*
     TALLERES
 */
-
 .main__talleres{
-    width: 90%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
-
 .cardTaller{
-    max-width: 350px;
-    height: fit-content;
+    width: 350px;
+    height: 250px;
+    background-color: aliceblue;
+    position: relative ;
     border-radius: 20px;
-    background: var(--green);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-.imgTalleresContainer{
-    max-width: 150px;
-    max-height: 150px;
-    clip-path: inset(0 20% 0 0);
+    box-shadow: 0 0 8px 3px;
+    overflow: hidden;
+    
 }
 
-.imgTalleres{
+
+.cardTaller__img{
     width: 100%;
     height: 100%;
-    clip-path: inset(0 20% 0 0);
-    object-fit: contain;
+    background-image: url('../img/taller.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    place-content: center;
+
 }
 
-.infoTalleres{
-    width: 300px;
-    height: 90%;
+.cardTaller__img h3{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    font-size: 3.6rem;
+    transition: .75s all ease-in-out;
+}
+
+.cardTaller__info{
+    width: 110%;
+    height: 100%;
+    background-color: rgba(91, 91, 90, 0.75);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(90%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    transition: .75s all ease-in-out;
+}
+
+.cardTaller__info p{
     font-size: 1.6rem;
+    color: white;
+}
+
+.cardTaller__info .row{
+    margin-right: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.cardTaller:hover .cardTaller__info{
+    transform: translateX(0);
+    transition: .75s all ease-in-out;
+}
+
+.cardTaller:hover .cardTaller__img h3{
+    transform: translateX(-130%);
+    transition: .75s all ease-in-out;
 }
