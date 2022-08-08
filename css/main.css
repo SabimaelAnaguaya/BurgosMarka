@@ -111,6 +111,11 @@ HEADER / header navBar
     width: 200px;
 }
 
+.letterLogo{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
 .listItems{
     width: fit-content;
     display: grid;
