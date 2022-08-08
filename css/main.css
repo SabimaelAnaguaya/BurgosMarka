@@ -19,7 +19,7 @@ body{
 
 html{
     font-size: 62.5%;
-    
+    font-family: 'Roboto Mono', monospace;
 }
 
 a{
@@ -41,12 +41,12 @@ HEADER / header contacts
 */
 .headerContacts{
     width: 100%;
-    height: 8vh;
+    height: fit-content;
     background: var(--white);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
 }
 .headerContacts a{
     color: black;
@@ -109,12 +109,10 @@ HEADER / header navBar
 
 .txtLogo{
     width: 200px;
-}
-
-.letterLogo{
     font-size: 2rem;
     font-weight: bolder;
 }
+
 
 .listItems{
     width: fit-content;
