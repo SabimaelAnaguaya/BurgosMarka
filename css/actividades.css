@@ -109,6 +109,15 @@ h2{
     transition: .5s;
 }
 
+.titleActividad{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 2rem;
+}
+
 .actividadCard:hover .imgActividad img{
     opacity: .5;
     transform: translateX(40%);

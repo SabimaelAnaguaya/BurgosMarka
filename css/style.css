@@ -84,7 +84,7 @@
 }
 
 .offerInfo{
-    max-width: 90%;
+    
     font-size: 1.6rem;
     margin: 20px;
     display: flex;
@@ -106,7 +106,7 @@
 }
 
 .offerInfo__gridItem{
-    max-width: 200px;
+    max-width: 300px;
     margin: 10px;
 }
 
