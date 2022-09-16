@@ -26,13 +26,11 @@ h2{
 
 .galeryBox{
     width: 90%;
-    height: 500px;
+    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
     gap: 5px;
-    justify-content: center;
     background-color: var(--green);
-    padding: 10px 0;
+    padding: 10px;
     border-radius: 30px;
     box-shadow: -1px -1px 10px 5px gray;
     overflow: scroll;
@@ -43,7 +41,6 @@ h2{
     height: 150px;
     cursor: pointer;
     border-radius: 10px;
-
 }
 
 .bigBox{
